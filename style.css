@@ -975,6 +975,24 @@ dd {
     font-weight: 600;
 }
 
+.cv-ranking {
+    margin-top: 0.42rem;
+    font-size: 0.72rem;
+    line-height: 1.35;
+    letter-spacing: 0.035em;
+    color: var(--muted);
+}
+
+.cv-ranking a {
+    color: inherit;
+    text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+    text-underline-offset: 0.2em;
+}
+
+.cv-ranking a:hover {
+    color: var(--ink);
+}
+
 .cv-entry time {
     padding-top: 4px;
     font-family: var(--mono);
