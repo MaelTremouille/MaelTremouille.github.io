@@ -815,6 +815,27 @@ dd {
     font-size: 0.82rem;
 }
 
+.timeline .timeline-ranking {
+    margin-top: 8px;
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.035em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.timeline-ranking a {
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, currentColor 30%, transparent);
+    text-underline-offset: 3px;
+}
+
+.timeline-ranking a:hover,
+.timeline-ranking a:focus-visible {
+    color: var(--ink);
+}
+
 .personal-section {
     color: #fff;
     background: var(--accent);
