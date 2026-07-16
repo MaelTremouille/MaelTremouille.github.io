@@ -51,3 +51,7 @@ if (window.location.hash) {
         if (target) target.scrollIntoView({ block: "start" });
     });
 }
+
+document.querySelectorAll("[data-print]").forEach((button) => {
+    button.addEventListener("click", () => window.print());
+});

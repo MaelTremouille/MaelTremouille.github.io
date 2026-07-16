@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Maël Trémouille — Machine Learning Researcher</title>
-    <meta name="description" content="Maël Trémouille researches mechanistic interpretability, cross-lingual knowledge editing, and reliable interventions in language models.">
-    <meta name="theme-color" content="#111b18">
-    <meta property="og:title" content="Maël Trémouille — Machine Learning Researcher">
-    <meta property="og:description" content="Researching what language models know, how they use it, and whether it transfers across languages.">
+    <title>Maël Trémouille — Machine Learning</title>
+    <meta name="description" content="Maël Trémouille is a machine-learning researcher and engineer with a background in statistics, language models, and research software.">
+    <meta name="theme-color" content="#f3f1eb">
+    <meta property="og:title" content="Maël Trémouille — Machine Learning">
+    <meta property="og:description" content="Research and engineering at the intersection of machine learning, statistics, and software.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&amp;family=Instrument+Serif:ital@0;1&amp;family=Space+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&amp;family=Manrope:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -19,334 +19,189 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <nav class="site-nav" aria-label="Main navigation">
-        <div class="nav-inner">
-            <a class="wordmark" href="index.html" aria-label="Maël Trémouille, home">
-                <span>Maël</span>
-                <span>Trémouille</span>
-            </a>
+        <a class="wordmark" href="index.html" aria-label="Maël Trémouille, home">
+            <span>Maël Trémouille</span>
+            <small>ML · Research</small>
+        </a>
 
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-                <span class="sr-only">Toggle navigation</span>
-                <span></span><span></span>
-            </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span class="sr-only">Toggle navigation</span>
+            <span></span><span></span>
+        </button>
 
-            <div class="nav-links" id="nav-links">
-                <a href="#research">Research</a>
-                <a href="#interests">Interests</a>
-                <a href="#work">Work</a>
-                <a href="#background">Background</a>
-                <a class="nav-cta" href="cv.html">View CV <span aria-hidden="true">↗</span></a>
-            </div>
+        <div class="nav-links" id="nav-links">
+            <a href="#about">About</a>
+            <a href="#interests">Interests</a>
+            <a href="#work">Work</a>
+            <a href="#path">Path</a>
+            <a class="nav-cta" href="cv.html">CV <span aria-hidden="true">↗</span></a>
         </div>
     </nav>
 
     <main id="main">
         <header class="hero">
             <div class="shell hero-frame">
-                <div class="hero-grid">
-                    <div class="hero-copy reveal">
-                        <p class="eyebrow"><span class="status-dot"></span> Machine learning researcher · Paris / Leuven</p>
-                        <h1>What a model <span class="outline-word">knows</span> is not always what it can <span class="signal-word">use.</span></h1>
+                <div class="hero-main">
+                    <div class="hero-title reveal">
+                        <p class="eyebrow"><span class="status-dot"></span> Machine learning · research &amp; engineering</p>
+                        <h1>Maël<br>Trémouille<span>.</span></h1>
                     </div>
 
-                    <div class="hero-side reveal">
-                        <p class="hero-lede">
-                            I’m Maël, a final-year student at École polytechnique and ENSAE Paris, currently researching cross-lingual model editing at KU Leuven.
-                        </p>
-                        <p class="hero-thesis">I study the gap between information being <em>inside</em> a model and that information shaping its behavior.</p>
+                    <div class="hero-intro reveal">
+                        <p class="hero-statement">I work on understanding and improving how machine-learning systems behave.</p>
+                        <p>Final-year student at École polytechnique and ENSAE Paris, currently a research intern at KU Leuven. My background spans statistics, machine learning, and research software.</p>
                         <div class="hero-actions">
-                            <a class="button button-primary" href="#research">Explore the work <span aria-hidden="true">↓</span></a>
-                            <a class="button button-quiet" href="mailto:mael.tremouille@polytechnique.edu">Email <span aria-hidden="true">↗</span></a>
+                            <a class="button button-dark" href="#work">Selected work <span aria-hidden="true">↓</span></a>
+                            <a class="button" href="mailto:mael.tremouille@polytechnique.edu">Contact <span aria-hidden="true">↗</span></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="hero-geometry reveal">
-                    <div class="representation-map">
-                        <div class="map-topline">
-                            <span>Representation field / 01</span>
-                            <span>English edit → multilingual queries</span>
-                        </div>
-                        <svg viewBox="0 0 850 350" role="img" aria-labelledby="map-title map-description">
-                            <title id="map-title">Cross-lingual knowledge access map</title>
-                            <desc id="map-description">An English factual edit enters a model, while queries in four other languages attempt to access the same update.</desc>
-                            <defs>
-                                <pattern id="minorGrid" width="25" height="25" patternUnits="userSpaceOnUse">
-                                    <path d="M 25 0 L 0 0 0 25" fill="none" stroke="currentColor" stroke-opacity=".12" stroke-width="1"/>
-                                </pattern>
-                                <marker id="mapArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                                    <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"/>
-                                </marker>
-                            </defs>
-                            <rect class="map-grid" width="850" height="350" fill="url(#minorGrid)"/>
-                            <path class="map-axis" d="M38 276 H812 M96 314 V32"/>
-                            <text class="map-axis-label" x="43" y="300">ACCESS</text>
-                            <text class="map-axis-label" x="104" y="43">REPRESENTATION</text>
-
-                            <g class="map-source">
-                                <rect x="130" y="175" width="76" height="76"/>
-                                <text x="168" y="207">EN</text>
-                                <text class="map-small" x="168" y="225">EDIT</text>
-                            </g>
-
-                            <path class="map-signal" d="M206 213 C270 213 275 135 341 135" marker-end="url(#mapArrow)"/>
-                            <text class="map-small map-signal-label" x="246" y="172">INSTALL ΔW</text>
-
-                            <g class="map-model">
-                                <rect x="351" y="82" width="190" height="190"/>
-                                <rect x="375" y="106" width="142" height="142"/>
-                                <rect x="400" y="131" width="92" height="92"/>
-                                <circle cx="446" cy="177" r="13"/>
-                                <text x="446" y="301">SAME MODEL</text>
-                            </g>
-
-                            <g class="map-targets">
-                                <path d="M541 130 C600 130 623 70 680 70"/>
-                                <path d="M541 160 C606 160 620 140 680 140"/>
-                                <path d="M541 192 C606 192 620 210 680 210"/>
-                                <path d="M541 222 C600 222 623 280 680 280"/>
-                                <g transform="translate(680 45)"><rect width="66" height="50"/><text x="33" y="30">ES</text></g>
-                                <g transform="translate(680 115)"><rect width="66" height="50"/><text x="33" y="30">FR</text></g>
-                                <g transform="translate(680 185)"><rect width="66" height="50"/><text x="33" y="30">IT</text></g>
-                                <g transform="translate(680 255)"><rect width="66" height="50"/><text x="33" y="30">ZH</text></g>
-                            </g>
-
-                            <path class="map-question" d="M766 45 v260"/>
-                            <text class="map-question-mark" x="787" y="190">?</text>
-                        </svg>
-                    </div>
-
-                    <aside class="now-card" aria-label="Current position">
-                        <div class="now-topline">
-                            <span>Current position</span>
-                            <span>05—08 / 2026</span>
-                        </div>
-                        <div class="now-coordinate" aria-hidden="true">50.8798° N<br>4.7005° E</div>
-                        <div>
-                            <p class="now-label">Research intern</p>
-                            <h2>KU<br>Leuven</h2>
-                            <p>Language Intelligence &amp; Information Retrieval</p>
-                        </div>
-                        <dl class="now-details">
-                            <div><dt>Focus</dt><dd>Cross-lingual model editing</dd></div>
-                            <div><dt>Method</dt><dd>Causal interventions</dd></div>
-                        </dl>
-                    </aside>
+                <div class="hero-field reveal" aria-hidden="true">
+                    <div class="field-meta"><span>Structure / variation / behavior</span><span>2026</span></div>
+                    <svg viewBox="0 0 900 260" preserveAspectRatio="none">
+                        <path class="field-grid" d="M75 0V260 M150 0V260 M225 0V260 M300 0V260 M375 0V260 M450 0V260 M525 0V260 M600 0V260 M675 0V260 M750 0V260 M825 0V260 M0 65H900 M0 130H900 M0 195H900"/>
+                        <path class="field-path" d="M72 194 C180 194 204 66 320 66 S480 195 592 195 S727 66 838 66"/>
+                        <circle class="field-node" cx="72" cy="194" r="8"/>
+                        <circle class="field-node" cx="320" cy="66" r="8"/>
+                        <circle class="field-node field-node-accent" cx="592" cy="195" r="12"/>
+                        <circle class="field-node" cx="838" cy="66" r="8"/>
+                        <rect class="field-frame" x="401" y="85" width="98" height="98"/>
+                        <rect class="field-frame" x="420" y="104" width="60" height="60"/>
+                    </svg>
+                    <div class="field-caption"><span>01</span><p>Looking for simple structure inside complex systems.</p></div>
                 </div>
             </div>
         </header>
 
-        <section class="section research-section" id="research">
-            <div class="shell">
-                <div class="section-heading reveal">
-                    <p class="section-index">01 / Current research</p>
-                    <h2>When a model learns a fact in one language, what changes in the others?</h2>
-                </div>
-
-                <div class="research-layout">
-                    <div class="research-story reveal">
-                        <p class="lead">
-                            Modern editing methods can rewrite a factual association inside a language model without retraining it. Yet an edit made in English may disappear when the same fact is queried in French, Spanish, Italian, or Chinese.
-                        </p>
-                        <p>
-                            At KU Leuven’s LIIR lab, within the INCLINE research programme, I investigate this failure through activation patching, controlled ablations, multilingual evaluation, and representation-level interventions. The central distinction is simple but consequential: is the new knowledge missing, or is it stored in the model but inaccessible to the foreign-language query?
-                        </p>
-                        <p>
-                            This question connects a practical reliability problem to a deeper one: knowing that information is encoded somewhere is not the same as showing that the model can use it when it matters.
-                        </p>
+        <section class="section about-section" id="about">
+            <div class="shell split-section">
+                <div class="section-label reveal"><span>01</span><p>About</p></div>
+                <div class="about-content reveal">
+                    <p class="large-copy">I am drawn to problems where mathematical clarity meets systems that matter in practice.</p>
+                    <div class="two-column-copy">
+                        <p>I began in statistics and computer science, then moved toward deep learning and language models. I enjoy the full research loop: reading papers, formulating experiments, building reliable code, and making sense of results.</p>
+                        <p>What keeps me interested is the gap between a model working and understanding why it works. I care about explanations that survive careful testing, and software that makes those tests reproducible.</p>
                     </div>
-
-                    <aside class="diagnostic-panel reveal" aria-labelledby="diagnostic-title">
-                        <div class="diagnostic-head">
-                            <span id="diagnostic-title">A causal diagnostic</span>
-                            <span>Research in progress</span>
-                        </div>
-                        <ol class="diagnostic-steps">
-                            <li><span>01</span><div><small>Install</small><strong>Change one fact in English</strong></div><b>ΔW</b></li>
-                            <li><span>02</span><div><small>Query</small><strong>Ask for it in another language</strong></div><b>k<sub>ℓ</sub></b></li>
-                            <li><span>03</span><div><small>Observe</small><strong>The old answer can survive</strong></div><b>≠</b></li>
-                            <li><span>04</span><div><small>Intervene</small><strong>Patch the internal access path</strong></div><b>?</b></li>
-                        </ol>
-                        <p class="diagnostic-question"><span>Storage</span><i>or</i><span>access?</span></p>
-                        <ul class="diagnostic-tags">
-                            <li>Llama 3.1 8B</li><li>MEMIT</li><li>AlphaEdit</li><li>EN / ES / FR / IT / ZH</li>
-                        </ul>
-                    </aside>
                 </div>
             </div>
         </section>
 
         <section class="section interests-section" id="interests">
             <div class="shell">
-                <div class="section-heading section-heading-split reveal">
-                    <div>
-                        <p class="section-index">02 / The longer arc</p>
-                        <h2>What I want to understand next.</h2>
-                    </div>
-                    <p class="section-intro">
-                        I’m interested in the point where an internal representation becomes a behavior—and in building evidence strong enough to tell the difference between correlation, control, and genuine model use.
-                    </p>
+                <div class="section-header reveal">
+                    <div class="section-label"><span>02</span><p>Broad interests</p></div>
+                    <h2>Questions I keep<br>coming back to.</h2>
                 </div>
 
-                <div class="interest-grid">
-                    <article class="interest-card reveal">
-                        <div class="card-number">A</div>
-                        <h3>Mechanistic interpretability</h3>
-                        <p>Finding causal mechanisms behind model behavior, with a clear separation between what can be decoded, what can be steered, and what the model actually relies on.</p>
-                        <svg class="interest-figure" viewBox="0 0 320 132" aria-hidden="true">
-                            <path class="figure-line" d="M16 22 H304 M16 66 H304 M16 110 H304"/>
-                            <g class="figure-nodes"><circle cx="64" cy="22" r="8"/><circle cx="132" cy="66" r="8"/><circle cx="232" cy="110" r="8"/><circle cx="272" cy="66" r="8"/></g>
-                            <path class="figure-signal" d="M64 22 C82 43 112 48 132 66 S205 88 232 110"/>
-                        </svg>
+                <div class="interest-list">
+                    <article class="interest-row reveal">
+                        <span class="row-index">A</span>
+                        <h3>Interpretability</h3>
+                        <p>Methods that make learned representations and model behavior easier to analyze, test, and reason about.</p>
+                        <svg viewBox="0 0 150 70" aria-hidden="true"><path d="M5 12H145M5 35H145M5 58H145"/><circle cx="36" cy="12" r="5"/><circle cx="76" cy="35" r="5"/><circle cx="116" cy="58" r="5"/><path class="accent-stroke" d="M36 12L76 35L116 58"/></svg>
                     </article>
 
-                    <article class="interest-card reveal">
-                        <div class="card-number">B</div>
-                        <h3>Reliable interventions</h3>
-                        <p>Designing editing, steering, and training-time mechanisms that remain precise outside the narrow setting in which they were built.</p>
-                        <svg class="interest-figure" viewBox="0 0 320 132" aria-hidden="true">
-                            <rect class="figure-box" x="16" y="14" width="104" height="104"/>
-                            <rect class="figure-box" x="200" y="14" width="104" height="104"/>
-                            <path class="figure-arrow" d="M135 66 H184"/>
-                            <path class="figure-vector" d="M40 96 L92 40 M224 91 L278 45"/>
-                            <circle class="figure-point" cx="92" cy="40" r="8"/><circle class="figure-point" cx="278" cy="45" r="8"/>
-                        </svg>
+                    <article class="interest-row reveal">
+                        <span class="row-index">B</span>
+                        <h3>Reliable ML</h3>
+                        <p>Evaluation and intervention methods that remain meaningful outside the narrow setting where they were designed.</p>
+                        <svg viewBox="0 0 150 70" aria-hidden="true"><rect x="8" y="8" width="54" height="54"/><rect x="88" y="8" width="54" height="54"/><path class="accent-stroke" d="M68 35H82M22 49L48 22M102 48L128 22"/></svg>
                     </article>
 
-                    <article class="interest-card reveal">
-                        <div class="card-number">C</div>
-                        <h3>Social cognition in LLMs</h3>
-                        <p>Understanding how models represent beliefs, stance, persuasion, and other agents—and how those mechanisms can become more interpretable and controllable.</p>
-                        <svg class="interest-figure" viewBox="0 0 320 132" aria-hidden="true">
-                            <path class="figure-line" d="M55 90 L160 28 L265 90 Z"/>
-                            <circle class="figure-agent" cx="55" cy="90" r="22"/><circle class="figure-agent" cx="160" cy="28" r="22"/><circle class="figure-agent" cx="265" cy="90" r="22"/>
-                            <rect class="figure-belief" x="148" y="77" width="24" height="24" transform="rotate(45 160 89)"/>
-                        </svg>
+                    <article class="interest-row reveal">
+                        <span class="row-index">C</span>
+                        <h3>Language models</h3>
+                        <p>Representation learning, multilingual systems, generative modeling, and the tools needed to study them carefully.</p>
+                        <svg viewBox="0 0 150 70" aria-hidden="true"><circle cx="20" cy="35" r="8"/><circle cx="75" cy="12" r="8"/><circle cx="130" cy="35" r="8"/><circle cx="75" cy="58" r="8"/><path class="accent-stroke" d="M28 32L67 15M83 15L122 32M122 39L83 55M67 55L28 39"/></svg>
                     </article>
                 </div>
-
-                <p class="throughline reveal"><span>Across all three:</span> cross-lingual transfer is not an afterthought; it is a test of whether a claimed mechanism is genuinely general.</p>
             </div>
         </section>
 
         <section class="section work-section" id="work">
             <div class="shell">
-                <div class="section-heading section-heading-split reveal">
-                    <div>
-                        <p class="section-index">03 / Selected work</p>
-                        <h2>Research, systems, and things built from first principles.</h2>
-                    </div>
-                    <a class="text-link" href="https://github.com/MaelTremouille" target="_blank" rel="noreferrer">All repositories <span aria-hidden="true">↗</span></a>
+                <div class="section-header reveal">
+                    <div class="section-label"><span>03</span><p>Selected work</p></div>
+                    <h2>Research and<br>engineering.</h2>
                 </div>
 
-                <div class="work-grid">
-                    <article class="work-card work-card-featured reveal">
-                        <div class="work-meta"><span>Research · 2026</span><span>In progress</span></div>
-                        <div class="work-featured-body">
-                            <div>
-                                <h3>Cross-lingual knowledge editing</h3>
-                                <p>A causal study of why factual edits that work in English fail to transfer across languages, and what representation-level interventions reveal about the failure.</p>
-                            </div>
-                            <div class="mini-diagram" aria-hidden="true">
-                                <span class="mini-source">EN</span>
-                                <span class="mini-path"></span>
-                                <span class="mini-core">ΔW</span>
-                                <span class="mini-path mini-path-dashed"></span>
-                                <span class="mini-target">FR</span>
-                            </div>
-                        </div>
-                        <ul class="work-tags"><li>Model editing</li><li>Activation patching</li><li>Multilingual NLP</li></ul>
+                <div class="work-list">
+                    <article class="work-row reveal">
+                        <div class="work-year">2026</div>
+                        <div><p class="work-type">Research</p><h3>KU Leuven · LIIR</h3></div>
+                        <p>Research internship in language intelligence and machine learning.</p>
+                        <span class="work-state">Current</span>
                     </article>
 
-                    <article class="work-card reveal">
-                        <div class="work-meta"><span>Consulting · 2026</span></div>
-                        <h3>Agentic risk assessment</h3>
-                        <p>A configurable LangGraph system orchestrating GPT-4o and o3 agents for document analysis, evidence gathering, and operational-risk decisions.</p>
-                        <ul class="work-tags"><li>LLM agents</li><li>LangGraph</li><li>Python</li></ul>
+                    <article class="work-row reveal">
+                        <div class="work-year">2026</div>
+                        <div><p class="work-type">Consulting</p><h3>Agentic risk assessment</h3></div>
+                        <p>A configurable multi-agent system for document analysis and operational-risk decisions.</p>
+                        <span class="work-state">Python · LLMs</span>
                     </article>
 
-                    <article class="work-card reveal">
-                        <div class="work-meta"><span>Research internship · 2025</span></div>
-                        <h3>Positive–Unlabeled learning</h3>
-                        <p>Reproduced research methods, developed an internal scoring package, and presented the results to Groupe BPCE’s scientific community.</p>
-                        <ul class="work-tags"><li>Statistical learning</li><li>Research engineering</li></ul>
+                    <article class="work-row reveal">
+                        <div class="work-year">2025</div>
+                        <div><p class="work-type">Research internship</p><h3>Positive–Unlabeled learning</h3></div>
+                        <p>Research implementation and an internal scoring package developed at Groupe BPCE.</p>
+                        <span class="work-state">Statistical ML</span>
                     </article>
 
-                    <article class="work-card reveal">
-                        <div class="work-meta"><span>Generative models · 2026</span></div>
-                        <h3>CANDI diffusion model</h3>
-                        <p>Studied temporal dissonance and crystallization in continuous-and-discrete diffusion, adapting training to WikiText-2 on an A100.</p>
-                        <ul class="work-tags"><li>Text diffusion</li><li>PyTorch</li><li>NLP</li></ul>
-                    </article>
-
-                    <a class="work-card work-card-link reveal" href="https://github.com/MaelTremouille/Toward-Robust-Models" target="_blank" rel="noreferrer">
-                        <div class="work-meta"><span>Deep learning · 2025</span><span aria-hidden="true">↗</span></div>
-                        <h3>Adversarial robustness</h3>
-                        <p>Min–max training and iterative attacks to study how architectural capacity shapes the accuracy–robustness trade-off.</p>
-                        <ul class="work-tags"><li>PGD &amp; MIM</li><li>WideResNet</li><li>PyTorch</li></ul>
+                    <a class="work-row work-row-link reveal" href="https://github.com/MaelTremouille/Toward-Robust-Models" target="_blank" rel="noreferrer">
+                        <div class="work-year">2025</div>
+                        <div><p class="work-type">Deep learning</p><h3>Adversarial robustness</h3></div>
+                        <p>Min–max training and iterative attacks to study the accuracy–robustness trade-off.</p>
+                        <span class="work-arrow" aria-hidden="true">↗</span>
                     </a>
 
-                    <a class="work-card work-card-link reveal" href="https://github.com/MaelTremouille/Noisy-GP-notebook" target="_blank" rel="noreferrer">
-                        <div class="work-meta"><span>Open source · 2024</span><span aria-hidden="true">↗</span></div>
-                        <h3>Noisy Gaussian processes</h3>
-                        <p>Variance re-interpolation for Bayesian optimization, contributed with tests and documentation to the Surrogate Modeling Toolbox.</p>
-                        <ul class="work-tags"><li>Gaussian processes</li><li>Optimization</li></ul>
+                    <a class="work-row work-row-link reveal" href="https://github.com/SMTorg/smt" target="_blank" rel="noreferrer">
+                        <div class="work-year">2024</div>
+                        <div><p class="work-type">Open source</p><h3>Surrogate Modeling Toolbox</h3></div>
+                        <p>Gaussian-process methods, optimization code, tests, and documentation.</p>
+                        <span class="work-arrow" aria-hidden="true">↗</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section class="section background-section" id="background">
-            <div class="shell background-grid">
-                <div class="section-heading reveal">
-                    <p class="section-index">04 / Background</p>
-                    <h2>A statistician’s route into how models think.</h2>
-                    <p class="background-copy">My path started with mathematics and statistical learning, moved through research engineering, and now centers on the internal structure of language models.</p>
-                    <a class="button button-dark" href="cv.html">Full CV <span aria-hidden="true">↗</span></a>
+        <section class="section path-section" id="path">
+            <div class="shell split-section">
+                <div class="section-label reveal"><span>04</span><p>Path</p></div>
+                <div class="path-content reveal">
+                    <h2>Statistics first.<br>Machine learning next.</h2>
+                    <ol class="timeline">
+                        <li><time>2026</time><div><strong>KU Leuven · LIIR</strong><p>Research internship</p></div></li>
+                        <li><time>2024—26</time><div><strong>École polytechnique + ENSAE Paris</strong><p>M.Sc. Data Science + Engineering degree in Data Science &amp; Statistics</p></div></li>
+                        <li><time>2025</time><div><strong>Groupe BPCE</strong><p>Research data science internship</p></div></li>
+                        <li><time>2022—24</time><div><strong>ENSAI</strong><p>Statistics &amp; Computer Science · Top 5%</p></div></li>
+                    </ol>
+                    <a class="button button-dark" href="cv.html">View full CV <span aria-hidden="true">↗</span></a>
                 </div>
-
-                <ol class="timeline reveal">
-                    <li>
-                        <span class="timeline-year">2026</span>
-                        <div><strong>KU Leuven · LIIR</strong><p>Research internship in cross-lingual model editing and representation-level interventions.</p></div>
-                    </li>
-                    <li>
-                        <span class="timeline-year">2024—26</span>
-                        <div><strong>École polytechnique + ENSAE Paris</strong><p>M.Sc. in Data Science and engineering degree in Data Science &amp; Statistics.</p></div>
-                    </li>
-                    <li>
-                        <span class="timeline-year">2025</span>
-                        <div><strong>Groupe BPCE</strong><p>Research data science internship focused on Positive–Unlabeled learning.</p></div>
-                    </li>
-                    <li>
-                        <span class="timeline-year">2022—24</span>
-                        <div><strong>ENSAI</strong><p>Engineering studies in statistics and computer science, graduating in the top 5%.</p></div>
-                    </li>
-                </ol>
             </div>
         </section>
 
         <section class="personal-section">
-            <div class="shell personal-grid reveal">
-                <p class="section-index">Away from the terminal</p>
-                <p>I’ve spent ten years practicing wrestling and Brazilian jiu-jitsu, including time as an assistant coach. I box, read Camus and Dostoevsky, and write reviews and personal essays.</p>
+            <div class="shell personal-inner reveal">
+                <p class="section-label"><span>05</span> Beyond work</p>
+                <p>Wrestling and Brazilian jiu-jitsu, boxing, Camus, Dostoevsky, and the occasional personal essay.</p>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="shell footer-grid">
+        <div class="shell footer-main">
             <div>
-                <p class="footer-kicker">Have a question worth opening up?</p>
-                <a class="footer-email" href="mailto:mael.tremouille@polytechnique.edu">Let’s talk.<span aria-hidden="true">↗</span></a>
+                <p class="footer-label">Get in touch</p>
+                <a class="footer-email" href="mailto:mael.tremouille@polytechnique.edu">mael.tremouille<br>@polytechnique.edu</a>
             </div>
             <div class="footer-links">
                 <a href="https://github.com/MaelTremouille" target="_blank" rel="noreferrer">GitHub ↗</a>
                 <a href="https://linkedin.com/in/maeltremouille" target="_blank" rel="noreferrer">LinkedIn ↗</a>
                 <a href="cv.html">CV ↗</a>
             </div>
-            <p class="footer-meta">Maël Trémouille<br>Paris · Leuven<br>© 2026</p>
         </div>
+        <div class="shell footer-bottom"><span>Maël Trémouille</span><span>Paris · Leuven</span><span>© 2026</span></div>
     </footer>
 </body>
 </html>

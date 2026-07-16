@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CV — Maël Trémouille</title>
-    <meta name="description" content="Curriculum vitae of Maël Trémouille, machine learning researcher specializing in mechanistic interpretability and multilingual NLP.">
-    <meta name="theme-color" content="#111b18">
+    <meta name="description" content="Curriculum vitae of Maël Trémouille, machine-learning researcher and engineer.">
+    <meta name="theme-color" content="#f3f1eb">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&amp;family=Instrument+Serif:ital@0;1&amp;family=Space+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&amp;family=Manrope:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -16,46 +16,44 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <nav class="site-nav" aria-label="Main navigation">
-        <div class="nav-inner">
-            <a class="wordmark" href="index.html" aria-label="Maël Trémouille, home">
-                <span>Maël</span>
-                <span>Trémouille</span>
-            </a>
+        <a class="wordmark" href="index.html" aria-label="Maël Trémouille, home">
+            <span>Maël Trémouille</span>
+            <small>ML · Research</small>
+        </a>
 
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-                <span class="sr-only">Toggle navigation</span>
-                <span></span><span></span>
-            </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span class="sr-only">Toggle navigation</span>
+            <span></span><span></span>
+        </button>
 
-            <div class="nav-links" id="nav-links">
-                <a href="index.html#research">Research</a>
-                <a href="index.html#interests">Interests</a>
-                <a href="index.html#work">Work</a>
-                <a href="index.html#background">Background</a>
-                <a class="nav-cta" href="index.html">Home <span aria-hidden="true">↖</span></a>
-            </div>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#interests">Interests</a>
+            <a href="index.html#work">Work</a>
+            <a href="index.html#path">Path</a>
+            <a class="nav-cta" href="index.html">Home <span aria-hidden="true">↖</span></a>
         </div>
     </nav>
 
     <main id="main">
         <header class="cv-hero">
-            <div class="shell cv-hero-grid">
+            <div class="shell cv-hero-inner">
                 <div class="reveal">
                     <p class="eyebrow"><span class="status-dot"></span> Curriculum vitae · July 2026</p>
-                    <h1>Research, education,<br><em>and selected work.</em></h1>
+                    <h1>Experience,<br>education <em>&amp; work.</em></h1>
                 </div>
                 <div class="cv-hero-side reveal">
-                    <p>Machine learning researcher interested in mechanistic interpretability, reliable model interventions, and multilingual generality.</p>
-                    <div class="cv-actions">
-                        <a class="button button-primary" href="assets/Mael_Tremouille_CV.pdf" target="_blank">Download PDF <span aria-hidden="true">↓</span></a>
-                        <a class="button button-quiet" href="mailto:mael.tremouille@polytechnique.edu">Email <span aria-hidden="true">↗</span></a>
+                    <p>Machine-learning researcher and engineer with a foundation in statistics, deep learning, and research software.</p>
+                    <div class="hero-actions">
+                        <button class="button button-dark" type="button" data-print>Print / save PDF <span aria-hidden="true">↗</span></button>
+                        <a class="button" href="mailto:mael.tremouille@polytechnique.edu">Contact <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
             </div>
         </header>
 
         <div class="shell cv-layout">
-            <aside class="cv-sidebar reveal">
+            <aside class="cv-sidebar reveal" aria-label="Contact and skills">
                 <div class="cv-side-block">
                     <h2>Contact</h2>
                     <a href="mailto:mael.tremouille@polytechnique.edu">mael.tremouille<br>@polytechnique.edu</a>
@@ -64,12 +62,12 @@
                 </div>
 
                 <div class="cv-side-block">
-                    <h2>Research focus</h2>
+                    <h2>Interests</h2>
                     <ul>
-                        <li>Mechanistic interpretability</li>
-                        <li>Model editing &amp; steering</li>
+                        <li>Interpretability</li>
+                        <li>Language models</li>
+                        <li>Reliable machine learning</li>
                         <li>Multilingual NLP</li>
-                        <li>Social cognition in LLMs</li>
                     </ul>
                 </div>
 
@@ -86,18 +84,12 @@
 
             <div class="cv-content">
                 <section class="cv-block reveal">
-                    <div class="cv-block-heading">
-                        <span>01</span>
-                        <h2>Profile</h2>
-                    </div>
-                    <p class="cv-profile">Final-year engineering student at École polytechnique and ENSAE Paris, specializing in data science and statistics. My current research asks how factual updates are represented and accessed across languages in large language models. More broadly, I am drawn to causal accounts of model behavior and to interventions that remain reliable across tasks, languages, and contexts.</p>
+                    <div class="cv-block-heading"><span>01</span><h2>Profile</h2></div>
+                    <p class="cv-profile">Final-year student at École polytechnique and ENSAE Paris, specializing in data science and statistics. I am interested in understanding model behavior and in building reliable experimental and software tools for machine-learning research.</p>
                 </section>
 
                 <section class="cv-block reveal">
-                    <div class="cv-block-heading">
-                        <span>02</span>
-                        <h2>Experience</h2>
-                    </div>
+                    <div class="cv-block-heading"><span>02</span><h2>Experience</h2></div>
 
                     <article class="cv-entry">
                         <div class="cv-entry-head">
@@ -105,9 +97,9 @@
                             <time>May—Aug. 2026</time>
                         </div>
                         <ul>
-                            <li>Researching cross-lingual knowledge editing and representation-level interventions within the INCLINE programme, supervised by Prof. Sien Moens.</li>
-                            <li>Implementing and benchmarking causal interventions, activation patching, and model-editing methods on multilingual medical and general-domain tasks.</li>
-                            <li>Investigating when an English factual edit is stored but remains inaccessible to queries in other languages.</li>
+                            <li>Conducting machine-learning research within the Language Intelligence &amp; Information Retrieval lab.</li>
+                            <li>Building reproducible experimental and evaluation pipelines for language models.</li>
+                            <li>Designing controlled experiments and analyzing model behavior across settings.</li>
                         </ul>
                     </article>
 
@@ -118,7 +110,7 @@
                         </div>
                         <ul>
                             <li>Designed a multi-agent system for automated operational-risk assessment.</li>
-                            <li>Orchestrated GPT-4o and o3 agents with LangGraph for document analysis, evidence gathering, and decision-making.</li>
+                            <li>Orchestrated language-model agents for document analysis, evidence gathering, and decision-making.</li>
                             <li>Delivered a production-ready Python package with a configurable architecture.</li>
                         </ul>
                     </article>
@@ -137,17 +129,14 @@
                 </section>
 
                 <section class="cv-block reveal">
-                    <div class="cv-block-heading">
-                        <span>03</span>
-                        <h2>Education</h2>
-                    </div>
+                    <div class="cv-block-heading"><span>03</span><h2>Education</h2></div>
 
                     <article class="cv-entry cv-entry-compact">
                         <div class="cv-entry-head">
                             <div><h3>École polytechnique &amp; ENSAE Paris</h3><p class="cv-role">Double degree · M.Sc. Data Science + Engineering degree in Data Science &amp; Statistics</p></div>
                             <time>2024—2026</time>
                         </div>
-                        <p>Deep learning, generative and diffusion models, computer vision, NLP, advanced machine learning, reinforcement learning, and optimal transport.</p>
+                        <p>Deep learning, generative models, computer vision, NLP, advanced machine learning, reinforcement learning, and optimal transport.</p>
                     </article>
 
                     <article class="cv-entry cv-entry-compact">
@@ -155,7 +144,7 @@
                             <div><h3>ENSAI</h3><p class="cv-role">Engineering degree · Statistics &amp; Computer Science · Top 5%</p></div>
                             <time>2022—2024</time>
                         </div>
-                        <p>Supervised and unsupervised learning, inferential statistics, measure theory, algorithms, and software engineering.</p>
+                        <p>Statistical learning, inferential statistics, measure theory, algorithms, and software engineering.</p>
                     </article>
 
                     <article class="cv-entry cv-entry-compact">
@@ -167,10 +156,7 @@
                 </section>
 
                 <section class="cv-block reveal">
-                    <div class="cv-block-heading">
-                        <span>04</span>
-                        <h2>Selected projects &amp; contributions</h2>
-                    </div>
+                    <div class="cv-block-heading"><span>04</span><h2>Selected projects</h2></div>
 
                     <article class="cv-entry">
                         <div class="cv-entry-head">
@@ -178,8 +164,8 @@
                             <time>Feb. 2026</time>
                         </div>
                         <ul>
-                            <li>Analyzed temporal dissonance in noise schedules and the crystallization mechanism for non-autoregressive text generation.</li>
-                            <li>Adapted training to WikiText-2 with a vocabulary of roughly 30,000 tokens on an NVIDIA A100.</li>
+                            <li>Studied noise schedules and crystallization in continuous-and-discrete diffusion.</li>
+                            <li>Adapted training to WikiText-2 on an NVIDIA A100.</li>
                         </ul>
                     </article>
 
@@ -189,7 +175,7 @@
                             <time>Oct. 2025—Jan. 2026</time>
                         </div>
                         <ul>
-                            <li>Reimplemented min–max optimization to compare WideResNet and CNN capacity under iterative L∞ and L0 attacks on CIFAR-10 and GTSRB.</li>
+                            <li>Compared WideResNet and CNN capacity under iterative attacks on CIFAR-10 and GTSRB.</li>
                             <li>Studied stochastic training as a regularizer for the accuracy–robustness trade-off.</li>
                         </ul>
                     </article>
@@ -201,16 +187,13 @@
                         </div>
                         <ul>
                             <li>Implemented Gaussian-process variance re-interpolation methods for Bayesian optimization.</li>
-                            <li>Contributed optimization code, unit tests, and documentation to the Python library.</li>
+                            <li>Contributed optimization code, unit tests, and documentation.</li>
                         </ul>
                     </article>
                 </section>
 
                 <section class="cv-block reveal">
-                    <div class="cv-block-heading">
-                        <span>05</span>
-                        <h2>Beyond research</h2>
-                    </div>
+                    <div class="cv-block-heading"><span>05</span><h2>Beyond work</h2></div>
                     <div class="cv-beyond">
                         <p><strong>Sports</strong> Ten years of wrestling and Brazilian jiu-jitsu, including experience as an assistant coach; boxing.</p>
                         <p><strong>Reading &amp; writing</strong> Absurdist philosophy, Russian novels, reviews, and personal essays.</p>
@@ -220,19 +203,12 @@
         </div>
     </main>
 
-    <footer class="site-footer cv-footer">
-        <div class="shell footer-grid">
-            <div>
-                <p class="footer-kicker">Interested in the same questions?</p>
-                <a class="footer-email" href="mailto:mael.tremouille@polytechnique.edu">Let’s talk.<span aria-hidden="true">↗</span></a>
-            </div>
-            <div class="footer-links">
-                <a href="index.html">Home ↖</a>
-                <a href="https://github.com/MaelTremouille" target="_blank" rel="noreferrer">GitHub ↗</a>
-                <a href="https://linkedin.com/in/maeltremouille" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-            </div>
-            <p class="footer-meta">Maël Trémouille<br>Paris · Leuven<br>© 2026</p>
+    <footer class="site-footer">
+        <div class="shell footer-main">
+            <div><p class="footer-label">Get in touch</p><a class="footer-email" href="mailto:mael.tremouille@polytechnique.edu">mael.tremouille<br>@polytechnique.edu</a></div>
+            <div class="footer-links"><a href="index.html">Home ↖</a><a href="https://github.com/MaelTremouille" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/maeltremouille" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
         </div>
+        <div class="shell footer-bottom"><span>Maël Trémouille</span><span>Paris · Leuven</span><span>© 2026</span></div>
     </footer>
 </body>
 </html>
