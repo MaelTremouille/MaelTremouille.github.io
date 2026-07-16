@@ -1,203 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV — Mael Tremouille</title>
-    <meta name="description" content="CV of Mael Tremouille, Data Science student at Ecole polytechnique & ENSAE Paris.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV — Maël Trémouille</title>
+    <meta name="description" content="Curriculum vitae of Maël Trémouille, machine learning researcher specializing in mechanistic interpretability and multilingual NLP.">
+    <meta name="theme-color" content="#111b18">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&amp;family=Instrument+Serif:ital@0;1&amp;family=Space+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body class="cv-page">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<nav>
-    <div class="nav-content">
-        <span class="logo">MT</span>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="cv.html">CV</a>
-            <a href="https://github.com/MaelTremouille" target="_blank">GitHub</a>
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a class="wordmark" href="index.html" aria-label="Maël Trémouille, home">
+                <span>Maël</span>
+                <span>Trémouille</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+                <span class="sr-only">Toggle navigation</span>
+                <span></span><span></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#research">Research</a>
+                <a href="index.html#interests">Interests</a>
+                <a href="index.html#work">Work</a>
+                <a href="index.html#background">Background</a>
+                <a class="nav-cta" href="index.html">Home <span aria-hidden="true">↖</span></a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<main>
+    <main id="main">
+        <header class="cv-hero">
+            <div class="shell cv-hero-grid">
+                <div class="reveal">
+                    <p class="eyebrow"><span class="status-dot"></span> Curriculum vitae · July 2026</p>
+                    <h1>Research, education,<br><em>and selected work.</em></h1>
+                </div>
+                <div class="cv-hero-side reveal">
+                    <p>Machine learning researcher interested in mechanistic interpretability, reliable model interventions, and multilingual generality.</p>
+                    <div class="cv-actions">
+                        <a class="button button-primary" href="assets/Mael_Tremouille_CV.pdf" target="_blank">Download PDF <span aria-hidden="true">↓</span></a>
+                        <a class="button button-quiet" href="mailto:mael.tremouille@polytechnique.edu">Email <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-<div class="cv-header">
-    <h1>Mael Tremouille</h1>
-    <p class="cv-subtitle">Data Science &amp; Statistics — Ecole polytechnique &amp; ENSAE Paris</p>
-    <div class="cv-contact">
-        <span>mael.tremouille@polytechnique.edu</span>
-        <a href="https://linkedin.com/in/maeltremouille" target="_blank">LinkedIn</a>
-        <a href="https://github.com/MaelTremouille" target="_blank">GitHub</a>
-    </div>
-</div>
+        <div class="shell cv-layout">
+            <aside class="cv-sidebar reveal">
+                <div class="cv-side-block">
+                    <h2>Contact</h2>
+                    <a href="mailto:mael.tremouille@polytechnique.edu">mael.tremouille<br>@polytechnique.edu</a>
+                    <a href="https://linkedin.com/in/maeltremouille" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+                    <a href="https://github.com/MaelTremouille" target="_blank" rel="noreferrer">GitHub ↗</a>
+                </div>
 
-<!-- Education -->
-<div class="cv-section">
-    <h2>Education</h2>
+                <div class="cv-side-block">
+                    <h2>Research focus</h2>
+                    <ul>
+                        <li>Mechanistic interpretability</li>
+                        <li>Model editing &amp; steering</li>
+                        <li>Multilingual NLP</li>
+                        <li>Social cognition in LLMs</li>
+                    </ul>
+                </div>
 
-    <div class="cv-entry">
-        <div class="cv-entry-header">
-            <h3>Ecole polytechnique — M2 Data Science</h3>
-            <span class="cv-date">2025 – 2026</span>
+                <div class="cv-side-block">
+                    <h2>Technical</h2>
+                    <p>Python, PyTorch, TensorFlow, scikit-learn, R, SQL, Git, Docker, LaTeX</p>
+                </div>
+
+                <div class="cv-side-block">
+                    <h2>Languages</h2>
+                    <p>French · native<br>English · C1, TOEIC 955</p>
+                </div>
+            </aside>
+
+            <div class="cv-content">
+                <section class="cv-block reveal">
+                    <div class="cv-block-heading">
+                        <span>01</span>
+                        <h2>Profile</h2>
+                    </div>
+                    <p class="cv-profile">Final-year engineering student at École polytechnique and ENSAE Paris, specializing in data science and statistics. My current research asks how factual updates are represented and accessed across languages in large language models. More broadly, I am drawn to causal accounts of model behavior and to interventions that remain reliable across tasks, languages, and contexts.</p>
+                </section>
+
+                <section class="cv-block reveal">
+                    <div class="cv-block-heading">
+                        <span>02</span>
+                        <h2>Experience</h2>
+                    </div>
+
+                    <article class="cv-entry">
+                        <div class="cv-entry-head">
+                            <div><h3>KU Leuven · LIIR</h3><p class="cv-role">Research intern · Leuven, Belgium</p></div>
+                            <time>May—Aug. 2026</time>
+                        </div>
+                        <ul>
+                            <li>Researching cross-lingual knowledge editing and representation-level interventions within the INCLINE programme, supervised by Prof. Sien Moens.</li>
+                            <li>Implementing and benchmarking causal interventions, activation patching, and model-editing methods on multilingual medical and general-domain tasks.</li>
+                            <li>Investigating when an English factual edit is stored but remains inaccessible to queries in other languages.</li>
+                        </ul>
+                    </article>
+
+                    <article class="cv-entry">
+                        <div class="cv-entry-head">
+                            <div><h3>ENSAE Junior Entreprise</h3><p class="cv-role">Data science consultant · Paris, France</p></div>
+                            <time>Feb.—Apr. 2026</time>
+                        </div>
+                        <ul>
+                            <li>Designed a multi-agent system for automated operational-risk assessment.</li>
+                            <li>Orchestrated GPT-4o and o3 agents with LangGraph for document analysis, evidence gathering, and decision-making.</li>
+                            <li>Delivered a production-ready Python package with a configurable architecture.</li>
+                        </ul>
+                    </article>
+
+                    <article class="cv-entry">
+                        <div class="cv-entry-head">
+                            <div><h3>Groupe BPCE</h3><p class="cv-role">Research data science intern · Paris, France</p></div>
+                            <time>Jun.—Sep. 2025</time>
+                        </div>
+                        <ul>
+                            <li>Reviewed and implemented research methods in Positive–Unlabeled learning.</li>
+                            <li>Built an internal Python package for scoring and classification.</li>
+                            <li>Presented the results to the group’s scientific community of more than 100 attendees.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class="cv-block reveal">
+                    <div class="cv-block-heading">
+                        <span>03</span>
+                        <h2>Education</h2>
+                    </div>
+
+                    <article class="cv-entry cv-entry-compact">
+                        <div class="cv-entry-head">
+                            <div><h3>École polytechnique &amp; ENSAE Paris</h3><p class="cv-role">Double degree · M.Sc. Data Science + Engineering degree in Data Science &amp; Statistics</p></div>
+                            <time>2024—2026</time>
+                        </div>
+                        <p>Deep learning, generative and diffusion models, computer vision, NLP, advanced machine learning, reinforcement learning, and optimal transport.</p>
+                    </article>
+
+                    <article class="cv-entry cv-entry-compact">
+                        <div class="cv-entry-head">
+                            <div><h3>ENSAI</h3><p class="cv-role">Engineering degree · Statistics &amp; Computer Science · Top 5%</p></div>
+                            <time>2022—2024</time>
+                        </div>
+                        <p>Supervised and unsupervised learning, inferential statistics, measure theory, algorithms, and software engineering.</p>
+                    </article>
+
+                    <article class="cv-entry cv-entry-compact">
+                        <div class="cv-entry-head">
+                            <div><h3>Lycée Descartes · Tours</h3><p class="cv-role">Preparatory classes · MPSI / MP</p></div>
+                            <time>2020—2022</time>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="cv-block reveal">
+                    <div class="cv-block-heading">
+                        <span>04</span>
+                        <h2>Selected projects &amp; contributions</h2>
+                    </div>
+
+                    <article class="cv-entry">
+                        <div class="cv-entry-head">
+                            <div><h3>Study of the CANDI diffusion model</h3><p class="cv-role">Generative-models project</p></div>
+                            <time>Feb. 2026</time>
+                        </div>
+                        <ul>
+                            <li>Analyzed temporal dissonance in noise schedules and the crystallization mechanism for non-autoregressive text generation.</li>
+                            <li>Adapted training to WikiText-2 with a vocabulary of roughly 30,000 tokens on an NVIDIA A100.</li>
+                        </ul>
+                    </article>
+
+                    <article class="cv-entry">
+                        <div class="cv-entry-head">
+                            <div><h3><a href="https://github.com/MaelTremouille/Toward-Robust-Models" target="_blank" rel="noreferrer">Adversarial robustness and model capacity ↗</a></h3><p class="cv-role">Deep-learning project</p></div>
+                            <time>Oct. 2025—Jan. 2026</time>
+                        </div>
+                        <ul>
+                            <li>Reimplemented min–max optimization to compare WideResNet and CNN capacity under iterative L∞ and L0 attacks on CIFAR-10 and GTSRB.</li>
+                            <li>Studied stochastic training as a regularizer for the accuracy–robustness trade-off.</li>
+                        </ul>
+                    </article>
+
+                    <article class="cv-entry">
+                        <div class="cv-entry-head">
+                            <div><h3><a href="https://github.com/SMTorg/smt" target="_blank" rel="noreferrer">Surrogate Modeling Toolbox ↗</a></h3><p class="cv-role">Open-source contributor</p></div>
+                            <time>2024</time>
+                        </div>
+                        <ul>
+                            <li>Implemented Gaussian-process variance re-interpolation methods for Bayesian optimization.</li>
+                            <li>Contributed optimization code, unit tests, and documentation to the Python library.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class="cv-block reveal">
+                    <div class="cv-block-heading">
+                        <span>05</span>
+                        <h2>Beyond research</h2>
+                    </div>
+                    <div class="cv-beyond">
+                        <p><strong>Sports</strong> Ten years of wrestling and Brazilian jiu-jitsu, including experience as an assistant coach; boxing.</p>
+                        <p><strong>Reading &amp; writing</strong> Absurdist philosophy, Russian novels, reviews, and personal essays.</p>
+                    </div>
+                </section>
+            </div>
         </div>
-        <p class="cv-courses">Courses: Deep Learning, Generative Models, Computer Vision, AI for Audio, Reinforcement Learning.</p>
-    </div>
+    </main>
 
-    <div class="cv-entry">
-        <div class="cv-entry-header">
-            <h3>ENSAE Paris — Engineering Degree, Data Science &amp; Statistics</h3>
-            <span class="cv-date">2024 – 2026</span>
+    <footer class="site-footer cv-footer">
+        <div class="shell footer-grid">
+            <div>
+                <p class="footer-kicker">Interested in the same questions?</p>
+                <a class="footer-email" href="mailto:mael.tremouille@polytechnique.edu">Let’s talk.<span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home ↖</a>
+                <a href="https://github.com/MaelTremouille" target="_blank" rel="noreferrer">GitHub ↗</a>
+                <a href="https://linkedin.com/in/maeltremouille" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            </div>
+            <p class="footer-meta">Maël Trémouille<br>Paris · Leuven<br>© 2026</p>
         </div>
-        <p class="cv-courses">Courses: Advanced Machine Learning, NLP, Algorithms, Statistics.</p>
-    </div>
-
-    <div class="cv-entry">
-        <div class="cv-entry-header">
-            <h3>ENSAI — Engineering Degree, Statistics &amp; Computer Science</h3>
-            <span class="cv-date">2022 – 2024</span>
-        </div>
-        <p class="cv-courses">Courses: Supervised &amp; Unsupervised Learning, Inferential Statistics, Measure Theory.</p>
-    </div>
-
-    <div class="cv-entry">
-        <div class="cv-entry-header">
-            <h3>Lycee Descartes (Tours) — Preparatory Classes MPSI/MP</h3>
-            <span class="cv-date">2020 – 2022</span>
-        </div>
-        <p class="cv-courses">Mathematics (Linear Algebra, Analysis), Physics, Computer Science.</p>
-    </div>
-</div>
-
-<!-- Experience -->
-<div class="cv-section">
-    <h2>Experience</h2>
-
-    <div class="cv-entry">
-        <div class="cv-entry-header">
-            <h3>KU Leuven (Belgium)</h3>
-            <span class="cv-date">May 2026 – Aug. 2026</span>
-        </div>
-        <p class="cv-role">Research Intern (upcoming)</p>
-        <ul>
-            <li>Research in multimodal AI and NLP within the INCLINE project (Prof. Marie-Francine Moens).</li>
-            <li>Development of architectures for cross-modal understanding and information retrieval.</li>
-            <li>Goal: contribution to a research paper for submission to EMNLP/ACL.</li>
-        </ul>
-    </div>
-
-    <div class="cv-entry">
-        <div class="cv-entry-header">
-            <h3>ENSAE Junior Entreprise</h3>
-            <span class="cv-date">Feb. 2026 – Apr. 2026</span>
-        </div>
-        <p class="cv-role">Data Science Consultant</p>
-        <ul>
-            <li>Designed a multi-agent system for automated operational risk assessment.</li>
-            <li>Pipeline orchestrating LLM agents (GPT-4o, o3) with LangGraph for document analysis and decision-making.</li>
-            <li>Delivered a production-ready Python package with configurable architecture.</li>
-        </ul>
-    </div>
-
-    <div class="cv-entry">
-        <div class="cv-entry-header">
-            <h3>BPCE Vie</h3>
-            <span class="cv-date">Jun. 2025 – Sep. 2025</span>
-        </div>
-        <p class="cv-role">Data Science Research Intern</p>
-        <ul>
-            <li>Reviewed and implemented research papers on Positive-Unlabeled (PU) learning.</li>
-            <li>Designed and delivered a Python package for internal scoring and classification.</li>
-            <li>Presented results at the group data science webinar (100+ attendees).</li>
-        </ul>
-    </div>
-</div>
-
-<!-- Projects & Open Source -->
-<div class="cv-section">
-    <h2>Projects &amp; Open Source</h2>
-
-    <div class="cv-entry">
-        <div class="cv-entry-header">
-            <h3>CANDI Model Study (Continuous And Discrete Diffusion)</h3>
-            <span class="cv-date">Feb. 2026</span>
-        </div>
-        <ul>
-            <li>Analyzed Temporal Dissonance theory for noise levels in diffusion.</li>
-            <li>Adapted implementation for training on WikiText-2 with NVIDIA A100 GPU (|V| &asymp; 30,000).</li>
-            <li>Evaluated the crystallization mechanism for non-autoregressive text generation.</li>
-        </ul>
-    </div>
-
-    <div class="cv-entry">
-        <div class="cv-entry-header">
-            <h3>Adversarial Robustness and Model Capacity</h3>
-            <span class="cv-date">Oct. 2025 – Jan. 2026</span>
-        </div>
-        <ul>
-            <li>Re-implemented min-max optimization to analyze architectural capacity (WideResNet vs CNN).</li>
-            <li>Benchmarked on CIFAR-10/GTSRB under iterative L&#8734; (PGD, MIM) and L&#8320; attacks.</li>
-            <li>Optimized accuracy-robustness trade-off via stochastic training as regularizer.</li>
-        </ul>
-    </div>
-
-    <div class="cv-entry">
-        <div class="cv-entry-header">
-            <h3>Surrogate Modeling Toolbox (SMT) — Open Source Contributor</h3>
-            <span class="cv-date">2024</span>
-        </div>
-        <ul>
-            <li>Implemented variance re-interpolation methods via Gaussian processes for Bayesian optimization.</li>
-            <li>Contributed optimization modules to the open source Python library.</li>
-            <li>Unit testing and documentation to ensure library robustness.</li>
-        </ul>
-    </div>
-
-    <div class="cv-entry">
-        <div class="cv-entry-header">
-            <h3>Noisy Gaussian Processes (ONERA) — Open Source Contributor</h3>
-            <span class="cv-date">2024</span>
-        </div>
-        <ul>
-            <li>Developed Bayesian optimization methods with noisy Gaussian processes.</li>
-            <li>Contributed to open source tooling for surrogate-based optimization.</li>
-        </ul>
-    </div>
-</div>
-
-<!-- Skills -->
-<div class="cv-section">
-    <h2>Skills</h2>
-    <dl class="cv-skills-grid">
-        <dt>Programming</dt>
-        <dd>Python, R, SQL, Git, Java, Docker, LaTeX</dd>
-        <dt>Machine Learning</dt>
-        <dd>Deep Learning (PyTorch, TF), GNN, Time Series, Boosting (CatBoost, XGB), scikit-learn</dd>
-        <dt>Self-training</dt>
-        <dd>Multi-agent systems (HuggingFace Agents Course)</dd>
-    </dl>
-</div>
-
-<!-- Languages & Interests -->
-<div class="cv-section">
-    <h2>Languages &amp; Interests</h2>
-    <dl class="cv-skills-grid">
-        <dt>Languages</dt>
-        <dd>French (native), English (C1 — TOEIC 955)</dd>
-        <dt>Sports</dt>
-        <dd>10 years of wrestling/BJJ (former assistant instructor), Boxing</dd>
-        <dt>Reading</dt>
-        <dd>Philosophy of the absurd (Camus), Russian novels (Dostoevsky). Writing recommendations and personal essays.</dd>
-    </dl>
-</div>
-
-</main>
-
-<footer>
-    Mael Tremouille &mdash; 2026
-</footer>
-
+    </footer>
 </body>
 </html>
