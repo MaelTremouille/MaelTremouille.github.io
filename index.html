@@ -127,40 +127,134 @@
                 </div>
 
                 <div class="work-list">
-                    <article class="work-row reveal">
-                        <div class="work-year">2026</div>
-                        <div><p class="work-type">Research</p><h3>KU Leuven · LIIR</h3></div>
-                        <p>Research internship in language intelligence and machine learning.</p>
-                        <span class="work-state">Current</span>
+                    <article class="work-item reveal">
+                        <div class="work-row">
+                            <div class="work-year">2026</div>
+                            <div class="work-heading"><p class="work-type">Research</p><h3 id="work-ku-title">KU Leuven · LIIR</h3></div>
+                            <p>Research internship in language intelligence and machine learning.</p>
+                            <div class="work-actions">
+                                <span class="work-state">Current</span>
+                                <button class="work-toggle" type="button" aria-expanded="false" aria-controls="work-ku-details">
+                                    <span>Details</span><span class="toggle-mark" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="work-details" id="work-ku-details" role="region" aria-labelledby="work-ku-title" hidden>
+                            <div>
+                                <p class="detail-label">Core principle</p>
+                                <p>Treat model behavior as an empirical object: isolate a factor, test it under controlled conditions, and check whether the effect survives changes in the experimental setting.</p>
+                            </div>
+                            <div>
+                                <p class="detail-label">My role</p>
+                                <p>I formulate hypotheses, implement reproducible experiment and evaluation pipelines, and analyze where results hold or fail.</p>
+                            </div>
+                            <p class="work-privacy">Ongoing research<br>Methods and findings withheld</p>
+                        </div>
                     </article>
 
-                    <article class="work-row reveal">
-                        <div class="work-year">2026</div>
-                        <div><p class="work-type">Consulting</p><h3>Agentic risk assessment</h3></div>
-                        <p>A configurable multi-agent system for document analysis and operational-risk decisions.</p>
-                        <span class="work-state">Python · LLMs</span>
+                    <article class="work-item reveal">
+                        <div class="work-row">
+                            <div class="work-year">2026</div>
+                            <div class="work-heading"><p class="work-type">Consulting</p><h3 id="work-agentic-title">Agentic risk assessment</h3></div>
+                            <p>A configurable multi-agent system for document analysis and operational-risk decisions.</p>
+                            <div class="work-actions">
+                                <span class="work-state">Python · LLMs</span>
+                                <button class="work-toggle" type="button" aria-expanded="false" aria-controls="work-agentic-details">
+                                    <span>Details</span><span class="toggle-mark" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="work-details" id="work-agentic-details" role="region" aria-labelledby="work-agentic-title" hidden>
+                            <div>
+                                <p class="detail-label">Core principle</p>
+                                <p>Break a complex document review into specialized steps—extraction, cross-checking, and synthesis—while keeping the evidence connected to each conclusion.</p>
+                            </div>
+                            <div>
+                                <p class="detail-label">My role</p>
+                                <p>I designed the modular agent orchestration, configurable decision logic, structured outputs, and the production-ready Python package.</p>
+                            </div>
+                            <p class="work-privacy">Confidential context<br>Principles only</p>
+                        </div>
                     </article>
 
-                    <article class="work-row reveal">
-                        <div class="work-year">2025</div>
-                        <div><p class="work-type">Research internship</p><h3>Positive–Unlabeled learning</h3></div>
-                        <p>Research implementation and an internal scoring package developed at Groupe BPCE.</p>
-                        <span class="work-state">Statistical ML</span>
+                    <article class="work-item reveal">
+                        <div class="work-row">
+                            <div class="work-year">2025</div>
+                            <div class="work-heading"><p class="work-type">Research internship</p><h3 id="work-pu-title">Positive–Unlabeled learning</h3></div>
+                            <p>Research implementation and an internal scoring package developed at Groupe BPCE.</p>
+                            <div class="work-actions">
+                                <span class="work-state">Statistical ML</span>
+                                <button class="work-toggle" type="button" aria-expanded="false" aria-controls="work-pu-details">
+                                    <span>Details</span><span class="toggle-mark" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="work-details" id="work-pu-details" role="region" aria-labelledby="work-pu-title" hidden>
+                            <div>
+                                <p class="detail-label">Core principle</p>
+                                <p>Learn from known positive examples when the remaining population is unlabeled—a mixture of positive and negative cases—rather than treating every unknown case as negative.</p>
+                            </div>
+                            <div>
+                                <p class="detail-label">My role</p>
+                                <p>I reviewed the research literature, implemented and compared methods, then delivered a reusable internal package for scoring and classification.</p>
+                            </div>
+                            <p class="work-privacy">Confidential data and use case<br>Principles only</p>
+                        </div>
                     </article>
 
-                    <a class="work-row work-row-link reveal" href="https://github.com/MaelTremouille/Toward-Robust-Models" target="_blank" rel="noreferrer">
-                        <div class="work-year">2025</div>
-                        <div><p class="work-type">Deep learning</p><h3>Adversarial robustness</h3></div>
-                        <p>Min–max training and iterative attacks to study the accuracy–robustness trade-off.</p>
-                        <span class="work-arrow" aria-hidden="true">↗</span>
-                    </a>
+                    <article class="work-item reveal">
+                        <div class="work-row">
+                            <div class="work-year">2025</div>
+                            <div class="work-heading"><p class="work-type">Deep learning</p><h3 id="work-robustness-title">Adversarial robustness</h3></div>
+                            <p>Min–max training and iterative attacks to study the accuracy–robustness trade-off.</p>
+                            <div class="work-actions">
+                                <div class="work-action-links">
+                                    <a class="work-repo" href="https://github.com/MaelTremouille/Toward-Robust-Models" target="_blank" rel="noreferrer" aria-label="Open the Adversarial robustness repository on GitHub">Repo ↗</a>
+                                    <button class="work-toggle" type="button" aria-expanded="false" aria-controls="work-robustness-details">
+                                        <span>Details</span><span class="toggle-mark" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-details" id="work-robustness-details" role="region" aria-labelledby="work-robustness-title" hidden>
+                            <div>
+                                <p class="detail-label">Core principle</p>
+                                <p>Train against worst-case perturbations, then test how architecture and model capacity affect the trade-off between standard accuracy and robustness.</p>
+                            </div>
+                            <div>
+                                <p class="detail-label">My role</p>
+                                <p>I re-implemented min–max training, benchmarked iterative attacks, and ran reproducible comparisons across architectures and perturbation settings.</p>
+                            </div>
+                            <a class="detail-repo" href="https://github.com/MaelTremouille/Toward-Robust-Models" target="_blank" rel="noreferrer">View repository ↗</a>
+                        </div>
+                    </article>
 
-                    <a class="work-row work-row-link reveal" href="https://github.com/SMTorg/smt" target="_blank" rel="noreferrer">
-                        <div class="work-year">2024</div>
-                        <div><p class="work-type">Open source</p><h3>Surrogate Modeling Toolbox</h3></div>
-                        <p>Gaussian-process methods, optimization code, tests, and documentation.</p>
-                        <span class="work-arrow" aria-hidden="true">↗</span>
-                    </a>
+                    <article class="work-item reveal">
+                        <div class="work-row">
+                            <div class="work-year">2024</div>
+                            <div class="work-heading"><p class="work-type">Open source</p><h3 id="work-smt-title">Surrogate Modeling Toolbox</h3></div>
+                            <p>Gaussian-process methods, optimization code, tests, and documentation.</p>
+                            <div class="work-actions">
+                                <div class="work-action-links">
+                                    <a class="work-repo" href="https://github.com/SMTorg/smt" target="_blank" rel="noreferrer" aria-label="Open the Surrogate Modeling Toolbox repository on GitHub">Repo ↗</a>
+                                    <button class="work-toggle" type="button" aria-expanded="false" aria-controls="work-smt-details">
+                                        <span>Details</span><span class="toggle-mark" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-details" id="work-smt-details" role="region" aria-labelledby="work-smt-title" hidden>
+                            <div>
+                                <p class="detail-label">Core principle</p>
+                                <p>Approximate expensive functions with a probabilistic surrogate so an optimizer can choose informative evaluations while using far fewer calls.</p>
+                            </div>
+                            <div>
+                                <p class="detail-label">My role</p>
+                                <p>I implemented Gaussian-process variance re-interpolation for Bayesian optimization, contributed optimization code, and added unit tests and documentation.</p>
+                            </div>
+                            <a class="detail-repo" href="https://github.com/SMTorg/smt" target="_blank" rel="noreferrer">View repository ↗</a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>

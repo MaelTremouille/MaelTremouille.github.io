@@ -55,3 +55,29 @@ if (window.location.hash) {
 document.querySelectorAll("[data-print]").forEach((button) => {
     button.addEventListener("click", () => window.print());
 });
+
+const workToggles = document.querySelectorAll(".work-toggle");
+
+function setWorkItemState(button, open) {
+    const panelId = button.getAttribute("aria-controls");
+    const panel = panelId ? document.getElementById(panelId) : null;
+    if (!panel) return;
+
+    button.setAttribute("aria-expanded", String(open));
+    panel.hidden = !open;
+    button.closest(".work-item")?.classList.toggle("is-open", open);
+}
+
+workToggles.forEach((button) => {
+    button.addEventListener("click", () => {
+        const willOpen = button.getAttribute("aria-expanded") !== "true";
+
+        if (willOpen) {
+            workToggles.forEach((otherButton) => {
+                if (otherButton !== button) setWorkItemState(otherButton, false);
+            });
+        }
+
+        setWorkItemState(button, willOpen);
+    });
+});
