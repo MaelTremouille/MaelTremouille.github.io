@@ -130,10 +130,10 @@
                     <article class="work-item reveal">
                         <div class="work-row">
                             <div class="work-year">2026</div>
-                            <div class="work-heading"><p class="work-type">Research</p><h3 id="work-ku-title">KU Leuven · LIIR</h3></div>
-                            <p>Research internship in language intelligence and machine learning.</p>
+                            <div class="work-heading"><p class="work-type">Research</p><h3 id="work-ku-title">KU Leuven · LIIR Lab</h3></div>
+                            <p>Why knowledge edited into a language model in English stays dormant in other languages — and where in the network the access breaks.<br><a class="work-ranking" href="https://www.topuniversities.com/universities/ku-leuven" target="_blank" rel="noreferrer">KU Leuven · 59th worldwide · QS World University Rankings 2027 ↗</a></p>
                             <div class="work-actions">
-                                <span class="work-state">2026</span>
+                                <span class="work-state">LLMs · PyTorch</span>
                                 <button class="work-toggle" type="button" aria-expanded="false" aria-controls="work-ku-details">
                                     <span>Details</span><span class="toggle-mark" aria-hidden="true"></span>
                                 </button>
@@ -141,14 +141,14 @@
                         </div>
                         <div class="work-details" id="work-ku-details" role="region" aria-labelledby="work-ku-title" hidden>
                             <div>
-                                <p class="detail-label">Core principle</p>
-                                <p>Treat model behavior as an empirical object: isolate a factor, test it under controlled conditions, and check whether the effect survives changes in the experimental setting.</p>
+                                <p class="detail-label">The question</p>
+                                <p>Knowledge-editing methods can rewrite a fact inside an LLM, but the edit often fails to transfer across languages. Rather than benchmark the failure, the project locates its mechanism: which keys, residual-stream positions and attention heads carry the edited fact, and why the multilingual read-out misses them.</p>
                             </div>
                             <div>
                                 <p class="detail-label">My role</p>
-                                <p>I formulate hypotheses, implement reproducible experiment and evaluation pipelines, and analyze where results hold or fail.</p>
+                                <p>I own the experimental side. I built the multilingual medical evaluation sets, reproduced and extended AlphaEdit, MEMIT, INCLINE, CAA and ITI on LLaMA, Qwen, Mistral and BLOOMZ, and located where cross-lingual access breaks by patching keys, residual streams and attention under causal controls and ablations — with checkpoint audits so every number can be traced back to a run. Work conducted towards an ICLR 2027 submission.</p>
                             </div>
-                            <p class="work-privacy">Ongoing research<br>Methods and findings withheld</p>
+                            <p class="work-privacy">Ongoing research<br>Results withheld until submission</p>
                         </div>
                     </article>
 
@@ -156,9 +156,9 @@
                         <div class="work-row">
                             <div class="work-year">2026</div>
                             <div class="work-heading"><p class="work-type">Consulting</p><h3 id="work-agentic-title">Agentic risk assessment</h3></div>
-                            <p>A configurable multi-agent system for document analysis and operational-risk decisions.</p>
+                            <p>An LLM agent system that corroborates or refutes operational-risk indicators from external documents, for a risk-consulting client in financial services.</p>
                             <div class="work-actions">
-                                <span class="work-state">Python · LLMs</span>
+                                <span class="work-state">LangGraph · FastAPI</span>
                                 <button class="work-toggle" type="button" aria-expanded="false" aria-controls="work-agentic-details">
                                     <span>Details</span><span class="toggle-mark" aria-hidden="true"></span>
                                 </button>
@@ -166,14 +166,66 @@
                         </div>
                         <div class="work-details" id="work-agentic-details" role="region" aria-labelledby="work-agentic-title" hidden>
                             <div>
-                                <p class="detail-label">Core principle</p>
-                                <p>Break a complex document review into specialized steps—extraction, cross-checking, and synthesis—while keeping the evidence connected to each conclusion.</p>
+                                <p class="detail-label">The problem</p>
+                                <p>A risk analyst states an indicator — the probability of a cyberattack on a critical service, say — and needs to know whether the outside world agrees. The system reads the documents, extracts the comparable facts, and returns a verdict that a human can audit down to the sentence it came from.</p>
                             </div>
                             <div>
                                 <p class="detail-label">My role</p>
-                                <p>I designed the modular agent orchestration, configurable decision logic, structured outputs, and the production-ready Python package.</p>
+                                <p>I developed the backend, the agents and the deployment, and owned the comparison-and-decision component: two named agents that turn documents into structured queries, check semantic and numerical compatibility with the claim, and produce a verdict with traceable citations. Multi-step orchestration in LangGraph across several models, a FastAPI backend and installable CLI, an offline test suite and reproducible benchmarks to measure verdict quality, Docker Compose deployment behind Nginx.</p>
                             </div>
-                            <p class="work-privacy">Confidential context<br>Principles only</p>
+                            <p class="work-privacy">Client work<br>Principles only</p>
+                        </div>
+                    </article>
+
+                    <article class="work-item reveal">
+                        <div class="work-row">
+                            <div class="work-year">2026</div>
+                            <div class="work-heading"><p class="work-type">Applied ML</p><h3 id="work-bonds-title">Bond pricing on TRACE data</h3></div>
+                            <p>Predicting corporate-bond prices from 5.4 million transactions — and finding out that the first model was cheating.</p>
+                            <div class="work-actions">
+                                <span class="work-state">LightGBM · 5.4M rows</span>
+                                <button class="work-toggle" type="button" aria-expanded="false" aria-controls="work-bonds-details">
+                                    <span>Details</span><span class="toggle-mark" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="work-details" id="work-bonds-details" role="region" aria-labelledby="work-bonds-title" hidden>
+                            <div>
+                                <p class="detail-label">The catch</p>
+                                <p>On dense transaction data, a naive last-price baseline is very hard to beat, and any feature that peeks at the current trade will beat it for the wrong reason. The value of the project is in the evaluation, not the model.</p>
+                            </div>
+                            <div>
+                                <p class="detail-label">My role</p>
+                                <p>I owned data integrity and evaluation. I found and fixed seven data leaks in the feature engineering — five where a current value stood in for a lagged one, two where training statistics were reused on validation — then rebuilt the evaluation as a seven-fold walk-forward backtest over 14-day windows, from 547k to 4.6M training rows, and added SHAP analysis of market and order-book features. With honest numbers, the team's LightGBM model with order-book features cut MAE by 11.7% against the naive baseline on high-yield bonds, winning five folds out of seven, and reduced RMSE by a factor of 2.6 on the tails.</p>
+                            </div>
+                            <p class="work-privacy">Team capstone project<br>Proprietary data</p>
+                        </div>
+                    </article>
+
+                    <article class="work-item reveal">
+                        <div class="work-row">
+                            <div class="work-year">2026</div>
+                            <div class="work-heading"><p class="work-type">NLP</p><h3 id="work-nlp-title">Political text classification</h3></div>
+                            <p>Predicting a candidate's political family from 4,519 French campaign manifestos, 1973–1993 — where TF-IDF beats a fine-tuned CamemBERT by 13 points.</p>
+                            <div class="work-actions">
+                                <div class="work-action-links">
+                                    <a class="work-repo" href="https://github.com/MaelTremouille/political-text-classification" target="_blank" rel="noreferrer" aria-label="Open the political text classification repository on GitHub">Repo ↗</a>
+                                    <button class="work-toggle" type="button" aria-expanded="false" aria-controls="work-nlp-details">
+                                        <span>Details</span><span class="toggle-mark" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-details" id="work-nlp-details" role="region" aria-labelledby="work-nlp-title" hidden>
+                            <div>
+                                <p class="detail-label">The finding</p>
+                                <p>Bigger is not better here. A cleaned TF-IDF with logistic regression reaches 84.2% test accuracy; a fine-tuned 110M-parameter CamemBERT reaches 71.0%, and a frozen sentence encoder 66.8%. A temporal split — train on early elections, test on later ones — drops every model by ten points and shows how much of the signal is period-specific vocabulary.</p>
+                            </div>
+                            <div>
+                                <p class="detail-label">My role</p>
+                                <p>Solo project. I built the pipeline end to end: corpus cleaning, three model families, five-fold cross-validation with bootstrap confidence intervals, the temporal split that exposed the drift, an error analysis, and t-SNE / UMAP maps of inter-party discourse. The cleaning step alone lifted temporal accuracy by 2.7 points and made the features interpretable.</p>
+                            </div>
+                            <a class="detail-repo" href="https://github.com/MaelTremouille/political-text-classification" target="_blank" rel="noreferrer">View repository ↗</a>
                         </div>
                     </article>
 
@@ -181,7 +233,7 @@
                         <div class="work-row">
                             <div class="work-year">2025</div>
                             <div class="work-heading"><p class="work-type">Research internship</p><h3 id="work-pu-title">Positive–Unlabeled learning</h3></div>
-                            <p>Research implementation and an internal scoring package developed at Groupe BPCE.</p>
+                            <p>A recommendation system at Groupe BPCE where only the positives are known — and the standard metrics cannot even be computed.</p>
                             <div class="work-actions">
                                 <span class="work-state">Statistical ML</span>
                                 <button class="work-toggle" type="button" aria-expanded="false" aria-controls="work-pu-details">
@@ -191,12 +243,12 @@
                         </div>
                         <div class="work-details" id="work-pu-details" role="region" aria-labelledby="work-pu-title" hidden>
                             <div>
-                                <p class="detail-label">Core principle</p>
-                                <p>Learn from known positive examples when the remaining population is unlabeled—a mixture of positive and negative cases—rather than treating every unknown case as negative.</p>
+                                <p class="detail-label">The problem</p>
+                                <p>Known positives, and an unlabeled remainder that mixes positives and negatives. Treating every unknown as negative biases the classifier; and without true negatives, recall in the usual sense does not exist.</p>
                             </div>
                             <div>
                                 <p class="detail-label">My role</p>
-                                <p>I reviewed the research literature, implemented and compared methods, then delivered a reusable internal package for scoring and classification.</p>
+                                <p>I reviewed the PU literature and implemented the methods that mattered: SCAR and SAR propensity estimation with an EM-style algorithm, the non-negative risk estimator nnPU, probability-gap relabelling, and Kernel Mean Matching solved as a quadratic program. Since recall could not be computed, I designed a recall-on-masked-positives metric to compare them, tuned with TPE, and shipped the result as an internal Python scoring package. I presented the method to the group's scientific committee, in front of 100 people.</p>
                             </div>
                             <p class="work-privacy">Confidential data and use case<br>Principles only</p>
                         </div>
@@ -206,10 +258,10 @@
                         <div class="work-row">
                             <div class="work-year">2025</div>
                             <div class="work-heading"><p class="work-type">Deep learning</p><h3 id="work-robustness-title">Adversarial robustness</h3></div>
-                            <p>Min–max training and iterative attacks to study the accuracy–robustness trade-off.</p>
+                            <p>Min–max training re-implemented from scratch, and a benchmark of how model capacity moves the accuracy–robustness trade-off.</p>
                             <div class="work-actions">
                                 <div class="work-action-links">
-                                    <a class="work-repo" href="https://github.com/MaelTremouille/Toward-Robust-Models" target="_blank" rel="noreferrer" aria-label="Open the Adversarial robustness repository on GitHub">Repo ↗</a>
+                                    <a class="work-repo" href="https://github.com/MaelTremouille/toward-robust-models" target="_blank" rel="noreferrer" aria-label="Open the Adversarial robustness repository on GitHub">Repo ↗</a>
                                     <button class="work-toggle" type="button" aria-expanded="false" aria-controls="work-robustness-details">
                                         <span>Details</span><span class="toggle-mark" aria-hidden="true"></span>
                                     </button>
@@ -218,14 +270,14 @@
                         </div>
                         <div class="work-details" id="work-robustness-details" role="region" aria-labelledby="work-robustness-title" hidden>
                             <div>
-                                <p class="detail-label">Core principle</p>
-                                <p>Train against worst-case perturbations, then test how architecture and model capacity affect the trade-off between standard accuracy and robustness.</p>
+                                <p class="detail-label">The setup</p>
+                                <p>Train against the worst-case perturbation an attacker can find, then ask what capacity buys you: a 4.3M-parameter CNN, ResNet-18 and a 36M-parameter WideResNet-28-10 on CIFAR-10 and GTSRB, attacked with FGSM, PGD, MIM and a universal L0 patch.</p>
                             </div>
                             <div>
                                 <p class="detail-label">My role</p>
-                                <p>I re-implemented min–max training, benchmarked iterative attacks, and ran reproducible comparisons across architectures and perturbation settings.</p>
+                                <p>Solo project. I re-implemented Madry's min–max training in PyTorch as a configurable pipeline with checkpoints and CSV reports, ran the full benchmark, and measured the trade-off. Adversarial training cut the universal patch's success rate from 89.7% to 14.8% on the CNN and from 71.3% to 27.1% on ResNet-18; lowering the share of adversarial examples during training recovered up to 5.9 points of clean accuracy at little or no cost in robustness.</p>
                             </div>
-                            <a class="detail-repo" href="https://github.com/MaelTremouille/Toward-Robust-Models" target="_blank" rel="noreferrer">View repository ↗</a>
+                            <a class="detail-repo" href="https://github.com/MaelTremouille/toward-robust-models" target="_blank" rel="noreferrer">View repository ↗</a>
                         </div>
                     </article>
 
@@ -233,7 +285,7 @@
                         <div class="work-row">
                             <div class="work-year">2024</div>
                             <div class="work-heading"><p class="work-type">Open source</p><h3 id="work-smt-title">Surrogate Modeling Toolbox</h3></div>
-                            <p>Gaussian-process methods, optimization code, tests, and documentation.</p>
+                            <p>A contribution to the public SMT library: Gaussian-process variance re-interpolation for Bayesian optimization.</p>
                             <div class="work-actions">
                                 <div class="work-action-links">
                                     <a class="work-repo" href="https://github.com/SMTorg/smt" target="_blank" rel="noreferrer" aria-label="Open the Surrogate Modeling Toolbox repository on GitHub">Repo ↗</a>
@@ -245,12 +297,12 @@
                         </div>
                         <div class="work-details" id="work-smt-details" role="region" aria-labelledby="work-smt-title" hidden>
                             <div>
-                                <p class="detail-label">Core principle</p>
-                                <p>Approximate expensive functions with a probabilistic surrogate so an optimizer can choose informative evaluations while using far fewer calls.</p>
+                                <p class="detail-label">The idea</p>
+                                <p>When the objective is noisy, the Gaussian-process variance near observed points is wrong for acquisition; re-interpolating it gives the optimizer an honest picture of what it still does not know.</p>
                             </div>
                             <div>
                                 <p class="detail-label">My role</p>
-                                <p>I implemented Gaussian-process variance re-interpolation for Bayesian optimization, contributed optimization code, and added unit tests and documentation.</p>
+                                <p>I implemented the variance re-interpolation for Bayesian optimization in the public SMT codebase, with the optimization code, unit tests and documentation required to merge into a library used by engineering teams.</p>
                             </div>
                             <a class="detail-repo" href="https://github.com/SMTorg/smt" target="_blank" rel="noreferrer">View repository ↗</a>
                         </div>
@@ -261,21 +313,40 @@
 
         <section class="section path-section" id="path">
             <div class="shell split-section">
-                <div class="section-label reveal"><span>04</span><p>Path</p></div>
+                <div class="section-label reveal"><span>04</span><p>Education</p></div>
                 <div class="path-content reveal">
                     <h2>Statistics first.<br>Machine learning next.</h2>
                     <ol class="timeline">
-                        <li><time>2026</time><div><strong>KU Leuven · LIIR</strong><p>Research internship</p></div></li>
                         <li>
-                            <time>2024—26</time>
+                            <time>2025—26</time>
                             <div>
-                                <strong>École polytechnique + ENSAE Paris · IP Paris</strong>
-                                <p>Member schools of Institut Polytechnique de Paris · M.Sc. Data Science + Engineering degree in Data Science &amp; Statistics</p>
+                                <strong>École polytechnique · IP Paris</strong>
+                                <p>M.Sc. Data Science (M2DS), taken in parallel with the final ENSAE year · Deep learning, generative models, reinforcement learning, convex optimization</p>
                                 <p class="timeline-ranking"><a href="https://www.topuniversities.com/universities/institut-polytechnique-de-paris" target="_blank" rel="noreferrer">IP Paris · Joint 43rd worldwide · QS World University Rankings 2027 ↗</a></p>
                             </div>
                         </li>
-                        <li><time>2025</time><div><strong>Groupe BPCE</strong><p>Research data science internship</p></div></li>
-                        <li><time>2022—24</time><div><strong>ENSAI</strong><p>Statistics &amp; Computer Science · Top 5%</p></div></li>
+                        <li>
+                            <time>2024—26</time>
+                            <div>
+                                <strong>ENSAE Paris · IP Paris</strong>
+                                <p>Engineering degree (Diplôme d'ingénieur) · Specialization in Data Science, Statistics &amp; Machine Learning (DSSA) · Direct entry into the second year after ENSAI · Advanced machine learning, deep learning, NLP, Bayesian statistics, econometrics, optimal transport</p>
+                                <p class="timeline-ranking"><a href="https://www.topuniversities.com/universities/institut-polytechnique-de-paris" target="_blank" rel="noreferrer">IP Paris · Joint 43rd worldwide · QS World University Rankings 2027 ↗</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <time>2022—24</time>
+                            <div>
+                                <strong>ENSAI</strong>
+                                <p>Engineering programme · Statistics &amp; Computer Science · Top 5% · Probability, inferential statistics, optimization, supervised and unsupervised learning, databases, algorithms</p>
+                            </div>
+                        </li>
+                        <li>
+                            <time>2020—22</time>
+                            <div>
+                                <strong>Lycée Descartes, Tours</strong>
+                                <p>Classes préparatoires MPSI/MP · Mathematics, physics, computer science</p>
+                            </div>
+                        </li>
                     </ol>
                     <a class="button button-dark" href="cv.html">View full CV <span aria-hidden="true">↗</span></a>
                 </div>

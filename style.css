@@ -596,7 +596,7 @@ dd {
 .work-privacy,
 .detail-repo {
     font-family: var(--mono);
-    font-size: 0.58rem;
+    font-size: 0.64rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
@@ -751,11 +751,28 @@ dd {
 }
 
 .work-details > div > p:last-child {
-    max-width: 440px;
+    max-width: 520px;
     margin-bottom: 0;
-    color: rgba(255,255,255,.72);
-    font-size: 0.8rem;
-    line-height: 1.72;
+    color: rgba(255,255,255,.8);
+    font-size: 0.94rem;
+    line-height: 1.7;
+}
+
+.work-ranking {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.035em;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, currentColor 30%, transparent);
+    text-underline-offset: 3px;
+}
+
+.work-ranking:hover,
+.work-ranking:focus-visible {
+    color: var(--ink);
 }
 
 .work-privacy {
